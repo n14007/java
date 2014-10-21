@@ -53,7 +53,6 @@ class Ex2_2 extends Ex{
 	}
 }
 
-
 public class Ex2 {
 	public static void main(String[] args){
 		Ex a;
