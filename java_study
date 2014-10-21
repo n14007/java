@@ -1,0 +1,13 @@
+public boolean sleepIn(boolean weekday, boolean vacation) {
+
+// いらない   boolean ret = false;
+
+//
+return (!weekday || vacation)
+
+return !(weekday && vacation); 
+  
+if(){
+  return true;
+} 
+  return false;

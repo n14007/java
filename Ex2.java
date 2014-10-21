@@ -22,8 +22,8 @@ class Ex2_0 extends Ex{
 
 class Ex2_1 extends Ex{
 	void execute(){
-		int x;
-		int y;
+		double x;
+		double y;
 
 		x = 63.1;
 		y = 18.8;
