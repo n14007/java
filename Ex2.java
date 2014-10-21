@@ -53,6 +53,72 @@ class Ex2_2 extends Ex{
 	}
 }
 
+class Ex2_00 extends Ex{
+        void execute(){
+                Scanner stdIn = new Scanner(System.in);
+                System.out.println("xとyを加減乗除します。");
+                System.out.print("xの値：");  // xの値の入力を促す
+                int x = stdIn.nextInt();
+                System.out.print("yの値：");  // yの値の入力を促す
+                int y = stdIn.nextInt();
+                System.out.println("x + x = " + (x + y)); // x + yの値を表示
+                System.out.println("x - x = " + (x - y)); // x - yの値を表示
+                System.out.println("x * x = " + (x * y)); // x * yの値を表示
+                System.out.println("x / x = " + (x / y)); // x / yの値を表示 
+                System.out.println("x % x = " + (x % y)); // x % yの値を表示 
+        }
+}
+
+class Ex2_3 extends Ex{
+        void execute(){
+                Scanner stdIn = new Scanner(System.in);
+                System.out.println("整数値をそのまま反復。");
+                System.out.print("xの値：");  // xの値の入力を促す
+                int x = stdIn.nextInt();
+                System.out.print("yの値：");  // yの値の入力を促す
+                int y = stdIn.nextInt();
+                System.out.println("x = " + (x)); // x + yの値を表示
+                System.out.println("y = " + (y)); // x + yの値を表示
+
+        }
+}
+
+class Ex2_4 extends Ex{
+        void execute(){
+                Scanner stdIn = new Scanner(System.in);
+                System.out.println("整数値に10を加減した値を出力。");
+                System.out.print("xの値: ");  // xの値の入力を促す
+                int x = stdIn.nextInt();
+                System.out.println("x + x = " + (x + 10)); // x + yの値を表示
+                System.out.println("x - x = " + (x - 10)); // x - yの値を表示
+        }
+}
+
+class Ex2_5 extends Ex{
+        void execute(){
+                Scanner stdIn = new Scanner(System.in);
+                System.out.println("2つの実数値を読み込み和と平均を出力。");
+                System.out.print("xの値：");  // xの値の入力を促す
+                int x = stdIn.nextInt();
+                System.out.print("yの値：");  // yの値の入力を促す
+                int y = stdIn.nextInt();
+                System.out.println("x + x = " + (x + y)); // x + yの値を表示
+                System.out.println("(x + x) /2 = " + ((x + y)/2) ); // x / yの値を表示 
+        }
+}
+
+class Ex2_6 extends Ex{
+        void execute(){
+                Scanner stdIn = new Scanner(System.in);
+                System.out.println("三角形の底辺と高さを実数値で読み込み面積を出力。");
+                System.out.print("底辺：");  // xの値の入力を促す
+                double x = stdIn.nextDouble();
+                System.out.print("高さ：");  // yの値の入力を促す
+                double y = stdIn.nextDouble();
+                System.out.println("(x * x)/2 = " + ((x * y)/2)); // x + yの値を表示
+        }
+}
+
 public class Ex2 {
 	public static void main(String[] args){
 		Ex a;
@@ -62,5 +128,17 @@ public class Ex2 {
 		a.execute(); 
                 a = new Ex2_2();
 		a.execute();
-	}
+                a.execute();
+                a = new Ex2_00();
+                a.execute();
+                a = new Ex2_3();
+                a.execute();
+                a = new Ex2_4();
+                a.execute();
+                a = new Ex2_5();
+                a.execute();
+                a = new Ex2_6();
+                a.execute();
+
+        }
 }
