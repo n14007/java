@@ -132,13 +132,13 @@ class Ex2_000 extends Ex{
 class Ex2_7 extends Ex{
         void execute(){
                 Random rand1 = new Random(); 
-                int lucky1 = rand1.nextInt(10); // 0-9の乱数
+                int lucky1 = rand1.nextInt(8); // 0-9の乱数
 
                 System.out.println("1以上9以下の値" +(lucky1+1)+ "です。");
                 Random rand2 = new Random(); 
-                int lucky2 = rand2.nextInt(10); // -9~-1の乱数
+                int lucky2 = rand2.nextInt(8); // -9~-1の乱数
 
-                System.out.println("-9以上-1以下の値" +(-lucky2)+ "です。");
+                System.out.println("-9以上-1以下の値" +(-lucky2-1)+ "です。");
                 Random rand3 = new Random(); 
                 int lucky3 = rand3.nextInt(90); // 10-99の乱数
 
@@ -147,25 +147,37 @@ class Ex2_7 extends Ex{
 }
 
 class Ex2_8 extends Ex{
+
         void execute(){
-                Random rand = new Random();
+          Random rand = new Random();
 
-                int lucky = rand.nextInt(11)-5; // 0-9の乱数
+          Scanner stdIn = new Scanner(System.in);
+          System.out.print("整数値：");
+          int x = stdIn.nextInt();
 
-                System.out.println("整数値プラスマイナス5の範囲" +lucky+ "です。");
+          int lucky = rand.nextInt(11)-5; // 0-9の乱数
+                 
+          System.out.println("整数値プラスマイナス5の範囲" +lucky+ "です。");
+                
+
         }
 }
 
 
 
 class Ex2_9 extends Ex{ void execute(){
+
   Random rand = new Random();
+
   double lucky = rand.nextDouble();
   System.out.println("0.0以上1.0未満の実数値"+ lucky +"です。");
-  double lucky1 = rand.nextDouble() +9.0;
+
+  double lucky1 = rand.nextDouble() *9.0;
   System.out.println("0.0以上10.0未満の実数値"+ lucky1 +"です。");
+
   double lucky2 = rand.nextDouble() -1.0;
   System.out.println("-1.0以上1.0未満の実数値"+ lucky2 +"です。");
+
 }
 }
 
