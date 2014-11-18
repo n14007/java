@@ -106,7 +106,7 @@ class Ex2_5 extends Ex{
                 System.out.println("(x + x) /2 = " + ((x + y)/2) ); // x / yの値を表示 
         }
 }
-
+*/
 class Ex2_6 extends Ex{
         void execute(){
                 Scanner stdIn = new Scanner(System.in);
@@ -118,8 +118,7 @@ class Ex2_6 extends Ex{
                 System.out.println("(x * x)/2 = " + ((x * y)/2)); // x + yの値を表示
         }
 }
-*/
-
+/*
 class Ex2_000 extends Ex{
         void execute(){
                 Random rand = new Random();
@@ -129,6 +128,8 @@ class Ex2_000 extends Ex{
                 System.out.println("今日のラッキーナンバーは" +lucky+ "です。");
         }
 }
+
+
 class Ex2_7 extends Ex{
         void execute(){
                 Random rand1 = new Random(); 
@@ -200,6 +201,7 @@ class Ex2_10 extends Ex {
               }
 
  
+*/
 public class Ex2 {
 	public static void main(String[] args){
 		Ex a;
@@ -217,11 +219,11 @@ public class Ex2 {
                 a = new Ex2_4();
                 a.execute();
                 a = new Ex2_5();
-                a.execute();
+                a.execute();*/
                 a = new Ex2_6();
                 a.execute();
-*/              a = new Ex2_000();
-                a.execute();
+  /*             a = new Ex2_000();
+               a.execute();
                 a = new Ex2_7();
                 a.execute();
                 a = new Ex2_8();
@@ -229,6 +231,6 @@ public class Ex2 {
                 a = new Ex2_9();
                 a.execute();
                 a = new Ex2_10();
-                a.execute();
+                a.execute();*/
        }
 }
