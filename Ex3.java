@@ -1,18 +1,13 @@
 class Ex3{
 
 	public String ex3_0(int n){
-          if(n<0){
 
           if(n > 0){
             return "その値は正です";
           }else{
             return "その値は０か負です";
           }
-	}
-
-        public String ex3_4(int a){
-
-	}
+        }
 
 	public int ex3_1(int n){
           
@@ -90,7 +85,6 @@ class Ex3{
             return "範囲外の値です";
           }  
 	}
->>>>>>> chap1
 
 	public double ex3_8(double a, double b){
           if(a < b){
