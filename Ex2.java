@@ -152,19 +152,6 @@ class Ex2_8 extends Ex{
         void execute(){
           Random rand = new Random();
 
-          Scanner stdIn = new Scanner(System.in);
-          System.out.print("整数値：");
-          int x = stdIn.nextInt();
-
-          int lucky = rand.nextInt(11)-5; // 0-9の乱数
-                 
-          System.out.println("整数値プラスマイナス5の範囲" +lucky+ "です。");
-                
-
-        }
-}
-
-
 
 class Ex2_9 extends Ex{ void execute(){
 
@@ -177,6 +164,10 @@ class Ex2_9 extends Ex{ void execute(){
   System.out.println("0.0以上10.0未満の実数値"+ lucky1 +"です。");
 
   double lucky2 = rand.nextDouble() -1.0;
+  double lucky1 = rand.nextDouble() *10.0;
+  System.out.println("0.0以上10.0未満の実数値"+ lucky1 +"です。");
+
+  double lucky2 = rand.nextDouble() -2.0;
   System.out.println("-1.0以上1.0未満の実数値"+ lucky2 +"です。");
 
 }
@@ -223,6 +214,7 @@ public class Ex2 {
                 a = new Ex2_6();
                 a.execute();
   /*             a = new Ex2_000();
+               a = new Ex2_000();
                a.execute();
                 a = new Ex2_7();
                 a.execute();
@@ -232,5 +224,6 @@ public class Ex2 {
                 a.execute();
                 a = new Ex2_10();
                 a.execute();*/
+                a.execute();
        }
 }
