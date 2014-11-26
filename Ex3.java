@@ -21,7 +21,7 @@ class Ex3{
 
 	public String ex3_2(int a, int b){
           
-          if(a / b == a){
+          if(a % b == 0){
             return b + "は" + a + "の約数です";
           }else{
             return b + "は" + a + "の約数ではありません";
@@ -41,27 +41,27 @@ class Ex3{
 
 	public String ex3_4(int a){
           
-          if(a / 5 == 0){
-            return "その値は５で割り切れます";
-          }else if(a == -a){
+          if(0 > a){
             return "正ではない整数値です";
+          }else if(a % 5 == 0){
+            return "その値は５で割り切れます";
           }else{
             return "その値は５で割り切れません";
           }
         }
 
 	public String ex3_5(int a){
-          if(a * 10 < -a){
+          if(a % 10 == 0){
             return "その値は１０の倍数です";
-          }else if(a == -a){
-            return "その値は１０の倍数ではありません";
-          }else{
+          }else if(0 > a){
             return "正でない整数値です";
+          }else{
+            return "その値は１０の倍数ではありません";
 	}
         }
 	
 	public String ex3_6(int a){
-          if(a / 3 == 0 ){
+          if(a % 3 == 0 ){
             return "その値は３で割り切れます";
           }else if(a % 3 == 1){
             return "その値を３で割った余りは１です";
@@ -73,13 +73,13 @@ class Ex3{
 	}
 
 	public String ex3_7(int a){
-          if(0 < 59){
+          if(0 <= a && a <= 59){
             return "不可";
-          }else if(60 < 69){
+          }else if(60 <= a && a <= 69){
             return "可";
-          }else if(70 > 79){
+          }else if(70 <= a && a <= 79){
             return "良";
-          }else if(80 < 100){
+          }else if(80 <= a && a <= 100){
             return "優";
           }else{
             return "範囲外の値です";
@@ -95,18 +95,16 @@ class Ex3{
 	}
 
 	public int ex3_9(int a, int b){
-          int num = 0;
-          if(a < num || num < b){
-            return num;
-          }else 
-            return 1;
+          int c = (a - b);
+            return c;
 	}
 
 	public String ex3_10(int a, int b){
-          if((a - b) < 10){
-            return "それらの差は１０以下です";
-          }else{
+          int c = (a - b);
+          if(a > 10){
             return "それらの差は１１以上です";
+          }else{
+            return "それらの差は１０以下です";
           }
 	}
 
