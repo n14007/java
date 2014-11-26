@@ -82,7 +82,7 @@ class Ex3{
           }else if(80 <= a && a <= 100){
             return "優";
           }else{
-            return "範囲外の値です";
+            return "範囲(0~100)外の値です";
           }  
 	}
 
